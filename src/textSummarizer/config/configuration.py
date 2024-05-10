@@ -4,8 +4,7 @@ from textSummarizer.entity import (DataIngestionConfig,
                                    DataValidationConfig,
                                    DataTransformationConfig,
                                    ModelTrainerConfig,
-                                   ModelEvaluationConfig
-                                   )
+                                   ModelEvaluationConfig)
 
 
 class ConfigurationManager:
@@ -51,7 +50,6 @@ class ConfigurationManager:
         return data_validation_config
     
 
-
     def get_data_transformation_config(self) -> DataTransformationConfig:
         config = self.config.data_transformation
 
@@ -64,7 +62,7 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
-
+    
 
 
     def get_model_trainer_config(self) -> ModelTrainerConfig:
@@ -89,8 +87,7 @@ class ConfigurationManager:
         )
 
         return model_trainer_config
-
-
+    
 
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
         config = self.config.model_evaluation
